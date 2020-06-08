@@ -10,9 +10,16 @@
 <body>
     <h1>Submitted Info:</h1>
     <form action="/go_back" method="POST">
-
         {% csrf_token %}
-        <button>Back</button>
+        <label for="name">Name:</label>{{name}}<br>
+        
+        <label for="dojo_location">Dojo Location:</label>{{dojo_location}}<br>
+        
+        <label for="favorite_language">Favorite Language:</label>{{favorite_language}}<br>
+        
+        <label for="comment">Comment:</label> {{comment}}<br>
+       
+        <button>Go Back</button>
 
     </form>
 </body>

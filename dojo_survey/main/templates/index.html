@@ -8,14 +8,17 @@
 </head>
 
 <body>
-    <h1>Index</h1>
     <form action="/results" method="POST">
         {% csrf_token %}
-        Your Name:
-        Dojo Location:
-        Favorite Language:
-        Comment (optional)
-        <button>Submit</button>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="dojo_location">Dojo Location:</label>
+        <input type="text" name="dojo_location" id="dojo_location"><br>
+        <label for="favorite_language">Favorite Language:</label>
+        <input type="text" name="favorite_language" id="favorite_language"><br>
+        <label for="comment" id="comment">Comment (optional)</label><br>
+        <textarea name="comment" id="comment" cols="50" rows="5"></textarea><br>
+        <button>Button</button>
     </form>
 </body>
 
